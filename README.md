@@ -78,15 +78,22 @@ Models were evaluated using:
 - F1 Score
 - ROC-AUC
 
+### ROC Curve
+
+![ROC Curve](images/roc_curve.png)
+
+*Figure 1. ROC curves comparing the classification performance of the three evaluated machine learning models.*
 
 ---
-
 ##  Key Results
 
 ### Best Performing Model
 
- **Logistic Regression**
+**Logistic Regression**
 
+![Model Comparison](images/model_comparison.png)
+
+*Figure 2. Comparison of accuracy, precision, recall, and F1 score across the evaluated machine learning models.*
 
 Key results:
 
@@ -104,11 +111,19 @@ Key findings included:
 
 The analysis also identified important fraud indicators, including differences between billed and approved amounts, claim submission timing, and provider characteristics.
 
-These findings demonstrate how machine learning can help insurers focus investigative resources on the highest-risk claims while reducing unnecessary manual review. 
+These findings demonstrate how machine learning can help insurers focus investigative resources on the highest-risk claims while reducing unnecessary manual review.
 
 ---
 
+
+
 ##  Business Impact
+
+### Logistic Regression Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+*Figure 3. Confusion matrix for the selected Logistic Regression model on the test dataset.*
 
 Rather than replacing investigators, this model is designed to support them by prioritizing claims with the highest probability of fraud.
 
@@ -120,9 +135,10 @@ Potential business benefits include:
 - Lower financial losses
 - Explainable predictions suitable for human review
 
-Because Logistic Regression produces probabilities, investigators could prioritize the most suspicious claims first rather than treating every flagged claim equally. 
+Because Logistic Regression produces probabilities, investigators could prioritize the most suspicious claims first rather than treating every flagged claim equally.
 
 ---
+
 
 ## Repository Contents
 
@@ -130,7 +146,7 @@ Because Logistic Regression produces probabilities, investigators could prioriti
 |------|-------------|
 | `Healthcare_Fraud_Detection.ipynb` | Complete end-to-end machine learning analysis |
 | `healthcare_fraud_detection.csv` | Healthcare claims dataset |
-| `Project_Report.docx` | Full technical report |
+| `Project_Report.pdf` | Full technical report |
 ---
 
 ## Technologies
@@ -154,6 +170,7 @@ Because Logistic Regression produces probabilities, investigators could prioriti
 - Matplotlib
 - Seaborn
 ---
+
 ## Key Takeaways
 
 - Demonstrated end-to-end machine learning workflow
